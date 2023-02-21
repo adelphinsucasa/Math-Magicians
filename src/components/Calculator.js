@@ -39,7 +39,7 @@ function Calculator() {
             </div>
           </div>
           <div className="pnlRightButtons">
-            <Button name="/" />
+            <Button name="" />
             <Button name="*" />
             <Button name="-" />
             <Button name="+" />
