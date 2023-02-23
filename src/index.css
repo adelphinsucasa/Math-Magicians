@@ -36,11 +36,10 @@ header {
   display: flex;
   background-color: lightgray;
   border: 1px solid white;
-  width: 100%;
 }
 
 .pnlButtonsContainer .pnlMainButtons {
-  width: 75%;
+  width: 100%;
 }
 
 .pnlMainButtons .pnlRow {
@@ -48,31 +47,27 @@ header {
 }
 
 .button {
-  width: calc(25% - 6px);
+  width: 25%;
   height: 10vh;
   border: 1px solid white;
   flex-grow: 1;
   text-align: center;
-  padding-top: 20px;
 }
 
-.btnCero {
-  margin: 0;
-  padding: 0;
-  flex-grow: 6.9;
-}
-
-.btnCero .button {
-  width: 100%;
-}
-
-.pnlRightButtons {
-  display: flex;
-  flex-direction: column;
+.button.orange {
   background-color: orange;
-  width: 25%;
 }
 
-.pnlRightButtons .button {
-  width: 100%;
+.button:hover,
+.button.orange:hover {
+  background-color: lightslategrey;
+}
+
+.button:active,
+.button.orange:active {
+  font-size: 40px;
+}
+
+.button.doblesize {
+  width: 50%;
 }
