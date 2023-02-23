@@ -1,10 +1,9 @@
 import Calculator from './Calculator';
+import Header from './Header';
 
 const App = () => (
   <div className="Calculator">
-    <header>
-      <h1>Math Magicians by Jose Delphin</h1>
-    </header>
+    <Header />
     <Calculator />
   </div>
 );

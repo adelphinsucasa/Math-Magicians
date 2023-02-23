@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+export default function Button(props) {
+  const { name, addClass, onclick } = props;
+  const classname = `button ${addClass}`;
 
-  render() {
-    const { name, addClass, onclick } = this.props;
-    const classname = `button ${addClass}`;
-    return (
-      <button type="button" className={classname} onClick={onclick}>{name}</button>
-    );
-  }
+  return (
+    <button type="button" className={classname} onClick={onclick}>{name}</button>
+  );
 }
 
 Button.defaultProps = {
